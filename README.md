@@ -18,4 +18,6 @@ LOcate the security group menu
 
 - Click on the add rule button for the inbound rule
 - select HTTP under type and anywhere as source
-- 
+- select All traffic under the outbound rule
+- Click on the create security group
+![Seeting the rules ](./images/All.png)
