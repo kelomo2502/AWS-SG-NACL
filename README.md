@@ -6,3 +6,14 @@ This project hands-on project aimed at understanding the fundamental components 
 
 ## Work through
 
+Currently, we cannot access our previously hosted website eventhough our apache2 server appears to be serving it and this is due to the security group setting
+
+= Creating a new security group
+LOcate the security group menu
+![Locate security menu](./images/locating_the_security_menu.png)
+
+- Fill all the secuirty group details
+  Such as name , description, VPC
+![Details](./images/details.png)
+
+- 
