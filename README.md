@@ -21,3 +21,12 @@ LOcate the security group menu
 - select All traffic under the outbound rule
 - Click on the create security group
 ![Seeting the rules ](./images/All.png)
+
+## Attaching the security group to the instance
+
+- Click on the instance
+- click on action and click security
+- Click on Change security group
+- Select the security group you mjust created
+- Click add security group and save
+![Sselect and save the security group](./images/select_the_security_group.png)
