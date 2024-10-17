@@ -16,4 +16,6 @@ LOcate the security group menu
   Such as name , description, VPC
 ![Details](./images/details.png)
 
+- Click on the add rule button for the inbound rule
+- select HTTP under type and anywhere as source
 - 
