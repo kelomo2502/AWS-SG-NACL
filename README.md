@@ -48,13 +48,14 @@ and this is so because security group are stateful
 -
 
 ## NACL
+
 - Navigate to the VPC tab
 - Click on it and find the network ACLs tab on the left hand sidebar
 - Create newtowk ACL
 ![Create Network ACL](./images/create_NACLs.png)
 - Provide the name of ACL
-- Choose the VPC 
-- The click create 
+- Choose the VPC
+- The click create
 ![Create button](/images/create.png)
 - if you selected the network ACL you created
 - Navigate to the inbound tab and choose edit. it will be interesting to note that its denying all inbound traffic by default
@@ -68,4 +69,14 @@ and this is so because security group are stateful
 - And determine whether to allow or deny traffic
 - The click save changes
 ![Save the inbound rule](/images/save_the_inbound_rules.png)
-- Our newlt created NACL is not associated with any subnet currently so lets associate it with our subnet 
+- Our newlt created NACL is not associated with any subnet currently so lets associate it with our subnet
+- Click on the NACL we just created and click on actions
+- Click on edit subnet association
+- Click on save changes
+- Let's try an access the website again from the ec2 public address
+- You notice, we cannot access the website
+- Despite allowing inbound traffic , but because the outbound rule is not allow traffic(response) out
+- We need to explicitly configure rule for both inbound and outbound traffic
+- Now lets select the NACL again and allow all outbound traffic
+- Once that has been done and save, we can now revisit the website
+- Wawu! the website is visible again
