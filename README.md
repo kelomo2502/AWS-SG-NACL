@@ -80,3 +80,7 @@ and this is so because security group are stateful
 - Now lets select the NACL again and allow all outbound traffic
 - Once that has been done and save, we can now revisit the website
 - Wawu! the website is visible again
+
+## Security Group allows inbound HTTP and SSH inbound traffic and NACL denies all inbound traffic
+
+- In above scenario, eventhough we have allowed inbound and outbound traffic in the security group, we are still unable to access the website because the NACL is denying inbound traffic
